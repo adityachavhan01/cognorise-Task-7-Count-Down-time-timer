@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="countdown-container">
+        <h1>Countdown Timer</h1>
+        <div id="countdown">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div>
+            <input type="number" id="inputMinutes" placeholder="Minutes" min="0">
+            <input type="number" id="inputSeconds" placeholder="Seconds" min="0">
+        </div>
+        <button id="startButton">Start Countdown</button>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Time's up!</p>
+            <button id="closePopupButton">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
